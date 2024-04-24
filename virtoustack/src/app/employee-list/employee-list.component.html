@@ -1,0 +1,17 @@
+
+
+
+    <div class="search">
+        <input type="search" placeholder="Search Value" [(ngModel)]="searchText">
+      </div>
+   
+<div class="card" *ngFor="let data of employeeData | search : searchText">
+    <img class="card-img-top" src="../../../assets/image/{{data.avatar | imagePath }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{data.name}}</h5>
+      <p class="card-text" style="color: rgb(126, 181, 237);"><b>{{data.email}}</b></p>
+      <p class="card-text">{{data.dob | date:'mm/dd/yyyy'}}</p>
+      <p class="card-text" style="color: rgb(231, 81, 35);"><b>{{data.country}}</b></p>
+      <button class="btn btn-primary" (click)="edit(data.id)">Edit Data</button>
+    </div>
+ 

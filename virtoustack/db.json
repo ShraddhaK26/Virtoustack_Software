@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "name": "Shraddha Kupekar",
+      "email": "shraddha@gmail.com",
+      "dob": "2002-03-26",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p6.jpg",
+      "id": 1
+    },
+    {
+      "name": "Samyak pawar",
+      "email": "pawarsam234@gmail.com",
+      "dob": "2001-10-01",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p2.jpg",
+      "id": 2
+    },
+    {
+      "name": "sakshi Patil",
+      "email": "sakshi@gmail.com",
+      "dob": "1999-04-20",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p7.jpg",
+      "id": 3
+    },
+    {
+      "name": "Athrv pal",
+      "email": "palathrv23@gmail.com",
+      "dob": "2000-03-05",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p3.png",
+      "id": 4
+    },
+    {
+      "name": "krisha Sharma",
+      "email": "sharmaKrisha@gmail.com",
+      "dob": "1998-12-11",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p8.jpg",
+      "id": 5
+    },
+    {
+      "name": "Samar Desai",
+      "email": "samardesai2@gmail.com",
+      "dob": "2002-04-11",
+      "country": "India",
+      "avatar": "C:\\fakepath\\p4.jpg",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<body>
+  
+      <div class="outer">
+       
+          <h4>Login Form</h4>
+          
+          <div class="inner">
+              <form [formGroup]="employeeForm">
+              
+              <p><input class="in" type="text" formControlName="name" placeholder="Type your name"/><i class="fa-solid fa-user"></i></p>
+               <span class="err" *ngIf="employeeForm.get('name')?.errors?.['maxlength']">Enter maximum 15 character allowed</span>
+  <span class="err" *ngIf="!employeeForm.get('name')?.errors?.['maxlength'] && employeeForm.get('name')?.errors?.['pattern']">Only Character Allowed</span>     
+  <span class="err" *ngIf="employeeForm.get('name')?.errors?.['required'] && employeeForm.get('name')?.touched">Please Type Your Name</span> 
+
+                 <p><input class="in" type="email" formControlName="email" placeholder="Type your Email"/><i class="fa-solid fa-user"></i></p>
+                 <span class="err" *ngIf="this.employeeForm.get('email')?.errors?.['pattern']">Enter Valid Email Id</span>
+                 <span class="err" *ngIf="this.employeeForm.get('email')?.errors?.['required'] && employeeForm.get('email')?.touched">Please Type Your Email</span>
+               
+                 <p><input class="in" type="text" formControlName="dob" placeholder="Type your DOB"   /><i class="fa-solid fa-user"></i></p>
+                 <span class="err" *ngIf="employeeForm.get('dob')?.errors?.['required'] && employeeForm.get('dob')?.touched">Please Type Your DOB</span> 
+
+                 <p><input class="in" type="text" formControlName="country" placeholder="Type your Country"/><i class="fa-solid fa-user"></i></p>
+                 <span class="err" *ngIf="employeeForm.get('country')?.errors?.['required'] && employeeForm.get('country')?.touched">Please Type Your Country</span> 
+
+              <p><input class="in" type="file" formControlName="avatar"  placeholder="Type your Password"/><i class="fa-solid fa-lock"></i></p>
+              <span class="err" *ngIf="employeeForm.get('avatar')?.errors?.['required'] && employeeForm.get('avatar')?.touched">Please Upload Your avatar</span> 
+
+             
+              <p><input class="btn" *ngIf="!id" (click)="submit()" type="submit" value="Submit"/><input *ngIf="id" class="btn" (click)="update()" type="update" value="Update"/><input class="btn" (click)="reset()" type="reset" value="Reset"/></p>
+          </form>
+          </div>
+      </div>
+  </body>
